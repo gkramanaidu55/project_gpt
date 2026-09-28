@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Tasks</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header><span class="badge">YOUR DAILY SPACE</span><h1>Little tasks.<br>Clearer days.</h1><p>A simple place to keep track of what matters today.</p></header>
+    <section class="card" aria-label="Task tracker">
+      <form id="task-form">
+        <label for="task-input">What's on your list?</label>
+        <div class="input-row"><input id="task-input" maxlength="180" placeholder="e.g. Build my first web app" autocomplete="off" required><button type="submit">Add task <span aria-hidden="true">+</span></button></div>
+      </form>
+      <div class="list-header"><h2>Your tasks</h2><span id="task-count" aria-live="polite">0 remaining</span></div>
+      <ul id="task-list"></ul>
+      <div id="empty-state"><span class="empty-icon" aria-hidden="true">✓</span><h3>A little room to focus.</h3><p>Add your first task above to get started.</p></div>
+      <p id="storage-message" role="status" hidden></p>
+    </section>
+    <footer>One task at a time. <span>Version 1.0</span></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,35 @@
+:root { color-scheme: light; font-family: "Segoe UI", system-ui, sans-serif; color: #203a35; background: #f4f6f1; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 90% 0%, #dbeadf 0, transparent 48%); }
+.app { width: min(100% - 40px, 680px); margin: 0 auto; padding: 72px 0 28px; }
+.badge { font-size: 11px; letter-spacing: 2px; font-weight: 700; color: #527566; }
+h1 { font-size: clamp(38px, 7vw, 54px); line-height: 1.1; letter-spacing: -2px; margin: 20px 0 16px; font-weight: 650; }
+header > p { color: #64776c; line-height: 1.6; margin-bottom: 32px; }
+.card { background: #fff; border: 1px solid #e0e6dd; border-radius: 22px; padding: 30px; box-shadow: 0 15px 45px #254c3210; }
+label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 12px; }
+.input-row { display: flex; gap: 10px; }
+input { min-width: 0; flex: 1; border: 1px solid #cdd8cf; border-radius: 10px; padding: 14px; font: inherit; font-size: 14px; background: #fafbf8; }
+button { font: inherit; cursor: pointer; border: 0; }
+button[type=submit] { background: #285a46; color: white; border-radius: 10px; padding: 12px 18px; font-size: 14px; font-weight: 600; white-space: nowrap; }
+button[type=submit]:hover { background: #1d4635; }
+button[type=submit] span { margin-left: 10px; }
+:focus-visible { outline: 3px solid #70a98b; outline-offset: 3px; }
+.list-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-top: 1px solid #edf0e9; margin-top: 28px; padding-top: 24px; }
+h2 { font-size: 16px; margin: 0; }
+#task-count { color: #607467; font-size: 12px; background: #eef4ec; padding: 6px 10px; border-radius: 20px; }
+ul { list-style: none; padding: 0; margin: 12px 0 0; }
+.task { display: flex; align-items: center; gap: 12px; padding: 15px 0; border-bottom: 1px solid #edf0e9; }
+.task label { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; margin: 0; font-weight: 400; cursor: pointer; }
+.task input { flex: none; width: 19px; height: 19px; accent-color: #285a46; margin: 0; }
+.task span { overflow-wrap: anywhere; line-height: 1.5; }
+.task.completed span { text-decoration: line-through; color: #819087; }
+.delete { background: transparent; color: #777e77; border-radius: 8px; padding: 10px; font-size: 13px; }
+.delete:hover { background: #fff0eb; color: #a03c2d; }
+#empty-state { text-align: center; padding: 35px 5px 20px; }
+.empty-icon { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #edf4e9; color: #52795b; font-size: 22px; }
+h3 { font-size: 16px; font-weight: 600; margin: 16px 0 8px; }
+#empty-state p { color: #738277; font-size: 14px; }
+#storage-message { color: #92442d; font-size: 13px; line-height: 1.5; }
+footer { display: flex; justify-content: space-between; margin-top: 22px; color: #718173; font-size: 12px; }
+[hidden] { display: none !important; }
+@media (max-width: 480px) { .app { padding-top: 36px; width: calc(100% - 28px); } .card { padding: 20px; } .input-row { flex-direction: column; } button[type=submit] { padding: 14px; } }
