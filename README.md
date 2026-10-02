@@ -32,3 +32,14 @@ Do not use this version to store sensitive information.
 
 DevOps handoff: deploy index.html, styles.css, and app.js together. There are no
 build commands, environment variables, or server dependencies for version 1.
+
+## Version 2 release handoff
+
+- Edit a task inline with Save or Cancel. Enter saves; Escape cancels.
+- Filter tasks using All, Active, or Completed. The remaining count always covers all tasks.
+- Changing filters cancels an unsaved edit. Adding from Completed switches to Active.
+- Existing version 1 browser data is retained using the same storage key and format.
+- Deploy the same three files together. No infrastructure, build, or database changes.
+- Rollback: redeploy the previous version of the three files. Saved data is compatible.
+- Smoke check: edit and reload; cancel an edit; test each filter; complete/reopen/delete
+  a task while filtered; confirm the intended task changes and counts remain correct.

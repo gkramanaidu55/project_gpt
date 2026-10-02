@@ -16,11 +16,11 @@
         <div class="input-row"><input id="task-input" maxlength="180" placeholder="e.g. Build my first web app" autocomplete="off" required><button type="submit">Add task <span aria-hidden="true">+</span></button></div>
       </form>
       <div class="list-header"><h2>Your tasks</h2><span id="task-count" aria-live="polite">0 remaining</span></div>
-      <ul id="task-list"></ul>
+      <div class="filters" role="group" aria-label="Filter tasks"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="active" aria-pressed="false">Active</button><button type="button" data-filter="completed" aria-pressed="false">Completed</button></div><p id="task-announcement" class="sr-only" role="status"></p><ul id="task-list"></ul>
       <div id="empty-state"><span class="empty-icon" aria-hidden="true">✓</span><h3>A little room to focus.</h3><p>Add your first task above to get started.</p></div>
       <p id="storage-message" role="status" hidden></p>
     </section>
-    <footer>One task at a time. <span>Version 1.0</span></footer>
+    <footer>One task at a time. <span>Version 2.0</span></footer>
   </main>
 </body>
 </html>
